@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.bg_img {
+    background-image: url(../img/png/burgers\ layer.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.back_ground_img {
+    background-image: url(../img/png/burger_group_layar.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.bg_color {
+    background-color: #F6E300;
+}
+
+.bg-color {
+    background-color: #FFF03F;
+}
+
+.bg_white {
+    background-color: white;
+}
+
+.bg_color_red {
+    background-color: #F4241E;
+}
+
+.bg-yellow {
+    background-color: #FFF03F;
+}
+
+.ff_poppine {
+    font-family: 'poppine', sans-serif;
+}
+
+.fw_400 {
+    font-weight: 400;
+}
+
+.fw_500 {
+    font-weight: 500;
+}
+
+.fw_600 {
+    font-weight: 600;
+}
+
+.fw_700 {
+    font-weight: 700;
+}
+
+.fs_18 {
+    font-size: 18px;
+}
+
+.fs_20 {
+    font-size: 20px;
+}
+
+.fs_24 {
+    font-size: 24px;
+}
+
+.fs_32 {
+    font-size: 32px;
+}
+
+.fs_36 {
+    font-size: 36;
+}
+
+.fs_48 {
+    font-size: 48px;
+}
+
+.fc_black {
+    color: black;
+}
+
+.fc_white {
+    color: white;
+}
+
+.fc_gray {
+    color: #4A4400;
+}
+
+.mw-806 {
+    max-width: 806px;
+}
+
+.mw_591 {
+    max-width: 591px;
+}
+
+.mw_524 {
+    max-width: 524px;
+}
+
+.mw_72 {
+    max-width: 72px;
+}
+
+.mw-348 {
+    max-width: 348px;
+}
+
+.opicty {
+    opacity: 0.7;
+}
+
+.connect_btn {
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 12px 32px;
+}
+
+.more_btn {
+    background: #F4241E;
+    border-radius: 10px;
+    padding: 15px 32px;
+}
+
+.translate {
+    transform: translateY(-60px);
+}
+
+.sline {
+    width: 0;
+    height: 500px;
+    border: 6px solid #F4241E;
+    background-color: #F4241E;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+}
+
+.circle1 {
+    width: 36.03px;
+    height: 36.03px;
+    border-radius: 100%;
+    background: #FFFFFF;
+    position: absolute;
+    top: 19%;
+    left: 49.5%;
+}
+
+.circle2 {
+    width: 36.03px;
+    height: 36.03px;
+    border-radius: 100%;
+    background: #FFFFFF;
+    position: absolute;
+    top: 43%;
+    left: 49.5%;
+}
+
+.circle3 {
+    width: 36.03px;
+    height: 36.03px;
+    border-radius: 100%;
+    background: #FFFFFF;
+    position: absolute;
+    top: 69%;
+    left: 49.5%;
+}
+
+.border-radius {
+    border-radius: 10px;
+}
+
+nav ul li:not(:last-child) a:hover {
+    color: #F4241E;
+}
+
+nav ul li:last-child a:hover {
+    color: white;
+    background-color: #F4241E;
+}
+
+.accordion-button {
+    background: #FFF03F !important;
+    height: 75px !important;
+}
+
+.accordion {
+    border-color: #FFF03F !important;
+    --bs-accordion-bg: none !important;
+    --bs-accordion-active-color: none !important;
+    --bs-accordion-border-color: none !important;
+}
+
+@media (max-width:992px) {
+
+    input[type="checkbox"]:checked~ul.small_screen {
+        opacity: 1;
+        pointer-events: all;
+        left: 0;
+    }
+
+    .small_screen {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: -100%;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        pointer-events: none;
+        background: radial-gradient(#F6E300, #b3a725);
+        overflow: hidden;
+    }
+
+    label[for="menu_box"]>span {
+        width: 100%;
+        height: 5px;
+        border-radius: 2px;
+        background-color: whitesmoke;
+
+    }
+
+    label[for="menu_box"] {
+        width: 30px;
+        height: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+
+    }
+
+    header ul li {
+        margin-bottom: 30px;
+        font-size: 24px;
+    }
+
+    nav ul li:not(:last-child) a:hover {
+        color: black;
+    }
+
+    nav ul li:last-child a:hover {
+        color: black;
+        background-color: white;
+    }
+
+}
+
+/* ---------time_line---------- */
+.my_container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 17px;
+    bottom: -15px;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.timeline_container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+.timeline_container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -13px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    left: 50%;
+}
+
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+.right::after {
+    left: -12px;
+}
+
+.content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+}
+
+@media screen and (max-width: 600px) {
+
+    .timeline::after {
+        left: 31px;
+    }
+
+    .timeline_container {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    .timeline_container::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }
+
+    .left::after,
+    .right::after {
+        left: 15px;
+    }
+
+    .right {
+        left: 0%;
+    }
+}
+
+/* ---------time_line---------- */
