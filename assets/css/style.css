@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@500&display=swap');
 
 * {
     margin: 0;
@@ -44,6 +44,10 @@
 
 .ff_poppine {
     font-family: 'poppine', sans-serif;
+}
+
+.ff_roboto{
+    font-family: 'roboto', sans-serif;
 }
 
 .fw_400 {
@@ -132,6 +136,8 @@
     background: #F4241E;
     border-radius: 10px;
     padding: 15px 32px;
+    border-color: #F4241E;
+    border: none;
 }
 
 .translate {
@@ -202,6 +208,13 @@ nav ul li:last-child a:hover {
     --bs-accordion-active-color: none !important;
     --bs-accordion-border-color: none !important;
 }
+
+.accordion-button:focus {
+    border-color: none !important;
+    box-shadow: none !important;
+}
+
+
 
 @media (max-width:992px) {
 
@@ -276,12 +289,12 @@ nav ul li:last-child a:hover {
 .timeline::after {
     content: '';
     position: absolute;
-    width: 6px;
-    background-color: white;
+    width: 8px;
+    background-color: #F4241E;
     top: 17px;
     bottom: -15px;
     left: 50%;
-    margin-left: -3px;
+    margin-left: -4px; 
 }
 
 .timeline_container {
@@ -294,11 +307,11 @@ nav ul li:last-child a:hover {
 .timeline_container::after {
     content: '';
     position: absolute;
-    width: 25px;
-    height: 25px;
-    right: -13px;
+    width: 35px;
+    height: 35px;
+    right: -17px;
     background-color: white;
-    border: 4px solid #FF9F55;
+    border: 4px solid white;
     top: 15px;
     border-radius: 50%;
     z-index: 1;
